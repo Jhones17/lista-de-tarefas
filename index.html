@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>lista de tarefas</title>
-<style></style>
-</head>
-<body>
-<div class="tarefas">
-<h1>Lista de tarefas</h1>
-<input type="text" placeholder="Escreva sua tarefa" />
-<input type="datetime-local" name="data" id="data" />
-<label for="opções de prioridade">Escolha da prioridade opção:</label>
-<select name="opções" id="opções">
-<option value="Importante">Importante</option>
-<option value="irrelevante">irrelevante</option>
-<option value="urgente">urgente</option>
-</select>
-<button onclick="enviar()">enviar</button>
-</div>
-<!--adicionar tarefas-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lista de tarefas</title>
+    <style></style>
+  </head>
+  <body>
+    <a href="https://lista-de-tarefas-basica-ten.vercel.app/"><button>lista de tarefas basicas</button></a>
+    <div class="tarefas">
+      <h1>Lista de tarefas</h1>
+      <input type="text" placeholder="Escreva sua tarefa" />
+      <input type="datetime-local" name="data" id="data" />
+      <label for="opções de prioridade">Escolha da prioridade opção:</label>
+      <select name="opções" id="opções">
+        <option value="Importante">Importante</option>
+        <option value="irrelevante">irrelevante</option>
+        <option value="urgente">urgente</option>
+      </select>
+      <button onclick="enviar()">enviar</button>
+    </div>
+    <!--adicionar tarefas-->
 
-<div class="divisão">
-<p class="IR">irrelevante </p>
-<p class="IM">Importante</p>
-<p class="UR">urgente</p>
-</div>
+    <div class="divisão">
+      <p class="IR">irrelevante</p>
+      <p class="IM">Importante</p>
+      <p class="UR">urgente</p>
+    </div>
 
-<!--divisões das tarefas-->
+    <!--divisões das tarefas-->
 
-<div class="contador">
-<h3>parabens você terminou</h3>
-<p>x</p>
-<h3>tarefas esse mês</h3>
-</div>
+    <div class="contador">
+      <h3>parabens você terminou</h3>
+      <p>x</p>
+      <h3>tarefas esse mês</h3>
+    </div>
 
-<!--contador de tarefas-->
-<div class="conselho">
-<h4>Conselho:</h4>
-estabeleça uma ordem de finalização de tarefas:
-<ul>
-<li>urgente</li>
-<li>Importante</li>
-<li>irrelevante</li>
-</ul>
-</div>
-<!--conselho-->
-<script>
-function enviar() {
-const p = document.querySelector('p');
-const input = document.createElement('input');
-const IR = input.value;
+    <!--contador de tarefas-->
+    <div class="conselho">
+      <h4>Conselho:</h4>
+      estabeleça uma ordem de finalização de tarefas:
+      <ul>
+        <li>urgente</li>
+        <li>Importante</li>
+        <li>irrelevante</li>
+      </ul>
+    </div>
+    <!--conselho-->
+    <script>
+      const tarefas = input.value
 
-const IR = document.createElement('IR');
-p.innerText = IR;
-console.log(IR); 
-}
-</script>
-</body>
+      function enviar(){
+          const
+      }
+    </script>
+  </body>
 </html>
